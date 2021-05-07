@@ -1,3 +1,6 @@
+// all state changes are happening inside the reducer based on the selected ‘Action.’ 
+// If the state is changing, then the reducer will create a new customer rather than mutating the existing customer list. 
+// In the case of the state change, the reducer is always going to return a newly created customer list object. 
 import { Action, createReducer, on } from '@ngrx/store';
 
 import * as CustomerActions from '../action/customer.actions';
